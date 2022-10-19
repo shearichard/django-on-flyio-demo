@@ -1,7 +1,9 @@
 #pages/views.py
 from django.http import HttpResponse
+from django.template import loader
 
 
 def homePageView(request):
-    return HttpResponse("Hello World from Django, hosted on Fly.io")
+    template = loader.get_template('pages/index.html')
+    return HttpResponse(template.render({}, request))
 
