@@ -1,6 +1,6 @@
-# fly.toml file generated for old-paper-9073 on 2022-11-05T18:30:03+13:00
+# fly.toml file generated for divine-sun-4503 on 2022-11-05T18:18:58+13:00
 
-app = "old-paper-9073"
+app = "divine-sun-4503"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
