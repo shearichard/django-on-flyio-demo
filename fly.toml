@@ -1,6 +1,6 @@
-# fly.toml file generated for old-paper-9073 on 2022-11-05T18:30:03+13:00
+# fly.toml file generated for nameless-pine-9633 on 2022-11-05T20:48:17+13:00
 
-app = "old-paper-9073"
+app = "nameless-pine-9633"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -13,7 +13,7 @@ processes = []
 
 [[services]]
   http_checks = []
-  internal_port = 8080
+  internal_port = 8000
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
