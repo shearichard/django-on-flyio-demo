@@ -26,3 +26,12 @@ $ cat .env | fly secrets import --app abc-defg-1234
 
 ... this will then trigger a redeploy and the app then behaves as if the .env was present in the originaly deploy.
 
+### Volumes
+
+I used this command to create the first volume 
+
+```
+fly vol create not_the_actual_vol_name_used --region xxx --size 1
+```
+
+
