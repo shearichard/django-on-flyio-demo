@@ -1,11 +1,12 @@
-# fly.toml file generated for shy-wind-3901 on 2022-11-05T21:46:30+13:00
+# fly.toml file generated for rob-palm-1980 on 2023-02-15T21:36:16+13:00
 
-app = "shy-wind-3901"
+app = "rob-palm-1980"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
 [env]
+  PORT = "8000"
 
 [experimental]
   allowed_public_ports = []
@@ -36,3 +37,7 @@ processes = []
     interval = "15s"
     restart_limit = 0
     timeout = "2s"
+
+[[statics]]
+  guest_path = "/app/public"
+  url_prefix = "/static/"
